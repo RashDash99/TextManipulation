@@ -7,7 +7,7 @@ export const Navbar = (props) => {
       <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            NikkAct
+            Textyle
           </a>
           <button
             className="navbar-toggler"
@@ -46,7 +46,7 @@ export const Navbar = (props) => {
                 id="flexSwitchCheckDefault" 
               />
               <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
-                Dark Mode
+               {`${props.mode === 'light' ? "Enable" :"Disable"} Dark Mode`}
               </label>
             </div>
           </div>
